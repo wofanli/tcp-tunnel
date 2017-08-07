@@ -1,0 +1,3 @@
+all: 
+	cd src; go install -v ./...
+	mv bin/cmd bin/tcptun

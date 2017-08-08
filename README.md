@@ -1,7 +1,7 @@
 # tcp-tunnel
 a tcp-tunnel implemented by golang. 
 
-It supports to forward any traffic through a tcp tunnel, regardless of the original protocol (like UDP, ARP, normal IP, etc). Besides, I create a interface for the tunnel, so we can easiyly apply QoS onto it. 
+It supports to forward any traffic through a tcp tunnel, regardless of the original protocol (like UDP, ARP, normal IP, etc). Besides, I create an interface for the tunnel, so we can easily apply QoS onto it. 
 
 ## usage example
 
@@ -35,6 +35,8 @@ Link t2 is created automatically on vm2:
 root@vm2:~# ip link show dev t2
 16: t2: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 500
     link/none
+    
+t1, t2 is a generic linux network interface, which can be used to apply QoS, route etc. 
     
 On VM1:
 ip add add 1.1.1.1/32 dev lo

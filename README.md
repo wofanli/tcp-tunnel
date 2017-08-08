@@ -1,5 +1,7 @@
 # tcp-tunnel
-a tcp-tunnel implemented by golang
+a tcp-tunnel implemented by golang. 
+
+It supports to forward any traffic through a tcp tunnel, regardless of the original protocol (like UDP, ARP, normal IP, etc). Besides, I create a interface for the tunnel, so we can easiyly apply QoS onto it. 
 
 ## usage example
 
